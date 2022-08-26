@@ -16,10 +16,10 @@ export default {
       api.addPostMenuButton("guest-reply", () => {
         return {
           action: "guestReply",
-          icon: "file-alt",
-          className: "raw-post",
+          icon: "reply",
+          className: "guest-reply",
           title: themePrefix("button_title"),
-          position: "second-last-hidden"
+          position: "last"
         };
       });
     });
