@@ -14,13 +14,19 @@ export default {
       });
 
       api.addPostMenuButton("guest-reply", () => {
-        return {
+        const args = {
           action: "guestReply",
           icon: "reply",
           className: "guest-reply",
           title: themePrefix("button_title"),
           position: "last"
         };
+        
+        if (true) {
+          args.label = "topic.reply.title";
+        }
+        
+        return args;
       });
     });
   }
